@@ -38,7 +38,7 @@ resource "aws_instance" "web" {
   user_data              = templatefile("./resource.sh", {})
 
   tags = {
-    Name = "Kastro"
+    Name = "jenkins"
   }
   root_block_device {
     volume_size = 29
